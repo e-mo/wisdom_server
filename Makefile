@@ -1,3 +1,3 @@
 default:
 	mkdir -p build/
-	gcc server.c -o build/server
+	gcc server.c child.c -o build/server
