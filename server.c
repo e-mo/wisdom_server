@@ -104,6 +104,7 @@ int main(int argc, char *argv[]) {
 
 			// Welcome to your new process, child
 			child_main(client_fd, addr);
+			exit(0);
 		}
 		
 		// This socket lives on in a child process
