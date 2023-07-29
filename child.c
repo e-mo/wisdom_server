@@ -15,6 +15,7 @@ int child_main(int client_fd, char *addr) {
 		if (num < 1) break;
 
 		printf("%.*s", num, buf);
+		printf("-\n");
 	}
 	printf("Child closing!\n");
 }
