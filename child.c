@@ -8,6 +8,13 @@ int child_main(int client_fd, char *addr) {
 
 	char *buf[100];
 	size_t num;
-	num = recv(client_fd, buf, 100, 0);	
-	printf("%.*s", num, buf);
+
+	for (;;) {
+
+		num = recv(client_fd, buf, 100, 0);	
+		if (num < 1) break;
+
+		printf("%.*s", num, buf);
+	}
+	printf("Child closing!\n");
 }
