@@ -13,6 +13,7 @@ int child_main(int client_fd, char *addr) {
 
 		num = recv(client_fd, buf, 100, 0);	
 		if (num < 1) break;
+		printf("num: %u\n", num);
 
 		for (int i = 0; i < num; i++) {
 			printf("%c", buf[i]);
