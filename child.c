@@ -14,7 +14,9 @@ int child_main(int client_fd, char *addr) {
 		num = recv(client_fd, buf, 100, 0);	
 		if (num < 1) break;
 
-		printf("%.*s", num, buf);
+		for (int i = 0; i < num; i++) {
+			printf("%c", buf[i]);
+		}
 
 		send(client_fd, "PONG", 4, 0);
 	}
