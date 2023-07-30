@@ -16,7 +16,7 @@ int child_main(int client_fd, char *addr) {
 
 		printf("%.*s", num, buf);
 
-		send(client_fd, buf, num, 0);
+		send(client_fd, "PONG", 4, 0);
 	}
 	printf("Child closing!\n");
 }
