@@ -43,8 +43,9 @@ int child_main(int client_fd, char *addr) {
 
 	bson_t *document = NULL;
 	bson_oid_t oid = {0};
-	time_t now;
-
+	time_t raw_time;
+	struct tm *now;
+	
 
 	char buf[100];
 	size_t num;
@@ -60,12 +61,14 @@ int child_main(int client_fd, char *addr) {
 			send(client_fd, "PONG", 4, 0);
 
 			// Get current time (according to server)
-			time(&now);
+			raw_time = time(NULL);
+			now = localtime(&raw_time);
 
 			document = bson_new();
 			bson_oid_init(&oid, NULL);
 			BSON_APPEND_OID(document, "_id", &oid);
-			BSON_APPEND_DATE_TIME(document, "timestamp", now);
+			//BSON_APPEND_DATE_TIME(document, "timestamp", now);
+			BSON_APPEND_DATE_TIME(document, "timestamp", raw_time);
 			BSON_APPEND_UTF8(document, "data", buf);
 			BSON_APPEND_UTF8(document, "response", "PONG");
 
