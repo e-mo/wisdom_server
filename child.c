@@ -5,19 +5,21 @@
 #include "child.h"
 
 int child_main(int client_fd, char *addr) {
-	printf("child: hello from %s\n", addr);
 
 	char buf[100];
 	size_t num;
-
 	for (;;) {
 
 		num = recv(client_fd, buf, 100, 0);	
 		if (num < 1) break;
 		buf[num] = '\0';
 
-		if (!strcmp(buf, "PING"))
+		if (!strcmp(buf, "PING")) {
+			printf("Received: PING\n");
+			printf("Sending: PONG\n");
 			send(client_fd, "PONG", 4, 0);
+		}
+
 
 	}
 	printf("Child closing!\n");

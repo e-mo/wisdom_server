@@ -96,7 +96,7 @@ int main(int argc, char *argv[]) {
 				addr, 
 				(sizeof addr)
 		);
-		printf("server: received connection\n\t%s\n", addr);
+		printf("server: started connection with %s\n", addr);
 
 		// Every connection gets forked into its own process
 		if (!fork()) { // This is a child <-> client connection
