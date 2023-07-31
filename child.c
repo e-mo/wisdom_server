@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 #include <sys/socket.h>
 
 #include "child.h"
@@ -13,13 +14,11 @@ int child_main(int client_fd, char *addr) {
 
 		num = recv(client_fd, buf, 100, 0);	
 		if (num < 1) break;
-		printf("num: %u\n", num);
+		buf[num] = '\0';
 
-		for (int i = 0; i < num; i++) {
-			printf("%c", buf[i]);
-		}
+		if(strstr(buf, "PING"))
+			send(client_fd, "PONG", 4, 0);
 
-		send(client_fd, "PONG", 4, 0);
 	}
 	printf("Child closing!\n");
 }
