@@ -64,6 +64,8 @@ int child_main(int client_fd, char *addr) {
 			raw_time = time(NULL);
 			now = localtime(&raw_time);
 
+			printf("%s\n", ctime(&raw_time));
+
 			document = bson_new();
 			bson_oid_init(&oid, NULL);
 			BSON_APPEND_OID(document, "_id", &oid);
