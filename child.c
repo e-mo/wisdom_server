@@ -67,6 +67,7 @@ int child_main(int client_fd, char *addr) {
 			BSON_APPEND_OID(document, "_id", &oid);
 			BSON_APPEND_DATE_TIME(document, "timestamp", now);
 			BSON_APPEND_UTF8(document, "data", buf);
+			BSON_APPEND_UTF8(document, "response", "PONG");
 
 			if (!mongoc_collection_insert_one(
 						collection, document, NULL, NULL, &error)) {
