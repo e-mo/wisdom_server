@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <sys/socket.h>
+#include <sys/time.h>
 
 #include <mongoc/mongoc.h>
 
@@ -43,9 +44,8 @@ int child_main(int client_fd, char *addr) {
 
 	bson_t *document = NULL;
 	bson_oid_t oid = {0};
-	time_t raw_time;
-	struct tm *now;
-	
+	struct timeval now;
+	uint64_t now_ms = 0;
 
 	char buf[100];
 	size_t num;
@@ -60,14 +60,13 @@ int child_main(int client_fd, char *addr) {
 			printf("Sending: PONG\n");
 			send(client_fd, "PONG", 4, 0);
 
-			// Get current time (according to server)
-			raw_time = time(NULL);
-			now = localtime(&raw_time);
+			gettimeofday(&now, NULL);
+			now_ms = (now.tv_sec * 1000) + (now.tv_usec / 1000);
 
 			document = bson_new();
 			bson_oid_init(&oid, NULL);
 			BSON_APPEND_OID(document, "_id", &oid);
-			BSON_APPEND_DATE_TIME(document, "timestamp", raw_time);
+			BSON_APPEND_DATE_TIME(document, "timestamp", now_ms);
 			BSON_APPEND_UTF8(document, "data", buf);
 			BSON_APPEND_UTF8(document, "response", "PONG");
 
