@@ -64,12 +64,10 @@ int child_main(int client_fd, char *addr) {
 			raw_time = time(NULL);
 			now = localtime(&raw_time);
 
-			printf("%s\n", ctime(&raw_time));
-
 			document = bson_new();
 			bson_oid_init(&oid, NULL);
 			BSON_APPEND_OID(document, "_id", &oid);
-			BSON_APPEND_DATE_TIME(document, "timestamp", mktime(now));
+			BSON_APPEND_DATE_TIME(document, "timestamp", raw_time);
 			BSON_APPEND_UTF8(document, "data", buf);
 			BSON_APPEND_UTF8(document, "response", "PONG");
 
