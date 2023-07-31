@@ -66,6 +66,7 @@ int child_main(int client_fd, char *addr) {
 			document = bson_new();
 			bson_oid_init(&oid, NULL);
 			BSON_APPEND_OID(document, "_id", &oid);
+			BSON_APPEND_UTF8(document, "ip", addr);
 			BSON_APPEND_DATE_TIME(document, "timestamp", now_ms);
 			BSON_APPEND_UTF8(document, "data", buf);
 			BSON_APPEND_UTF8(document, "response", "PONG");
