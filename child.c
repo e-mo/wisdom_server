@@ -13,7 +13,7 @@ int child_main(int client_fd, char *addr) {
 	size_t num;
 	for (;;) {
 
-		num = recv(client_fd, buf, 100, 0);	
+		num = recv(client_fd, buf, 100, MSG_DONTWAIT);	
 		if (num < 1) break;
 
 	}
