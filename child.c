@@ -2,6 +2,7 @@
 #include <string.h>
 #include <sys/socket.h>
 #include <sys/time.h>
+#include <stdbool.h>
 
 #include <fcntl.h>
 #include <errno.h>
@@ -18,7 +19,7 @@ enum _child_return {
 enum _header_index {
 	PACKET_TYPE,
 	PACKET_SIZE
-}
+};
 
 enum _packet_types {
 	ECHO_PACKET
@@ -38,8 +39,8 @@ int child_main(int client_fd, char *addr) {
 	fcntl(client_fd, F_SETFL, O_NONBLOCK);
 
 	char buf[RECV_BUFFER_SIZE] = {0};
-	header_t *header_p = buf;
-	void *data_p = buf[HEADER_SIZE];
+	header_t *header_p = (header_t *)buf;
+	void *data_p = (void *)&buf[HEADER_SIZE];
 	char *bp = buf;
 
 	size_t num = 0;
@@ -81,7 +82,7 @@ int child_main(int client_fd, char *addr) {
 		
 		switch (packet_type(header_p)) {
 		case ECHO_PACKET:	
-			printf("%.*s\n", packet_size(header_p));
+			printf("%.*s\n", packet_size(header_p), (char *)data_p);
 			break;
 		}
 
