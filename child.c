@@ -74,8 +74,8 @@ int child_main(int client_fd, char *addr) {
 
 			// process header here
 			uint16_t *hp_16 = (uint16_t *)header_p;
-			hp_16[PACKET_TYPE] = ntohs(hp_16[PACKET_TYPE]);
-			hp_16[PACKET_SIZE] = ntohs(hp_16[PACKET_SIZE]);
+			//hp_16[PACKET_TYPE] = ntohs(hp_16[PACKET_TYPE]);
+			//hp_16[PACKET_SIZE] = ntohs(hp_16[PACKET_SIZE]);
 		}
 
 		if (received < packet_size(header_p)) continue;
