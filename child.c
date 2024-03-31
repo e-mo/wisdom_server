@@ -43,13 +43,14 @@ int child_main(int client_fd, char *addr) {
 	void *data_p = (void *)&buf[HEADER_SIZE];
 	char *bp = buf;
 
-	size_t num = 0;
+	int num = 0;
 	size_t received = 0;	
 	bool new_packet = true;
 	for (;;) {
 
 		num = recv(client_fd, bp, RECV_BUFFER_SIZE - received, 0);	
 		if (num < 1) {
+			if (num == 0) break;
 			if (errno != EAGAIN && errno != EWOULDBLOCK)
 				break;
 

@@ -3,4 +3,4 @@
 
 build:
 	mkdir -p build/
-	gcc -o build/server server.c child.c # $(mongo_flags)
+	gcc -o build/server server.c child.c #$(mongo_flags)
