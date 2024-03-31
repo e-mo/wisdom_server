@@ -54,7 +54,6 @@ int child_main(int client_fd, char *addr) {
 			if (errno != EAGAIN && errno != EWOULDBLOCK)
 				break;
 
-			printf("would have blocked\n");
 			usleep(1000 * 10);
 			continue;
 		}
