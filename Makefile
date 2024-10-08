@@ -1,6 +1,11 @@
-.PHONY: build
-#mongo_flags = $(shell pkg-config --libs --cflags libmongoc-1.0)
+MAKEFLAGS += --no-print-directory
+SHELL := /bin/bash
 
-build:
-	mkdir -p build/
-	gcc -o build/server server.c child.c #$(mongo_flags)
+build: clean
+	mkdir -p build
+	cd build; cmake ..; $(MAKE) -j8
+
+clean:
+	rm -rf build
+
+.PHONY: build clean
