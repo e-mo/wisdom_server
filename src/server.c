@@ -76,6 +76,7 @@ int main(int argc, char *argv[]) {
 
 
 	printf("server: waiting for connections on port %s\n", port);
+	fflush(stdout);
 
 	int client_fd;
 	struct sockaddr_storage client_addr;
@@ -96,7 +97,9 @@ int main(int argc, char *argv[]) {
 				addr, 
 				(sizeof addr)
 		);
+
 		printf("server: started connection with %s\n", addr);
+		fflush(stdout);
 
 		// Every connection gets forked into its own process
 		if (!fork()) { // This is a child <-> client connection
@@ -104,6 +107,7 @@ int main(int argc, char *argv[]) {
 
 			// Welcome to your new process, child
 			child_main(client_fd, addr);
+			close(client_fd);
 			break;
 		}
 		

@@ -1,0 +1,455 @@
+server: waiting for connections on port 8086
+server: started connection with 23.22.227.77
+Child process starting: 23.22.227.77
+received: 9
+2024-10-12 20:35:19
+Packet type: echo
+Contents: 5B
+(null)
+Child process stopping: 23.22.227.77
+server: waiting for connections on port 8086
+server: started connection with 34.234.186.137
+Child process started: 4:34.234.186.137
+2024-10-12 21:20:51
+Packet type: echo
+Contents: 5B
+Ping!
+Connection closed: 34.234.186.137
+Child process stopped: 4:34.234.186.137
+server: waiting for connections on port 8086
+server: started connection with 34.234.186.137
+server: started connection with 44.210.17.192
+Child process started: 4:44.210.17.192
+2024-10-12 22:20:51
+Packet type: echo
+Contents: 5B
+Ping!
+Connection closed: 44.210.17.192
+Child process stopped: 4:44.210.17.192
+server: waiting for connections on port 8086
+server: started connection with 34.234.186.137
+server: started connection with 44.210.17.192
+server: started connection with 34.236.129.19
+Child process started: 4:34.236.129.19
+2024-10-12 23:20:51
+Packet type: echo
+Contents: 5B
+Ping!
+Connection closed: 34.236.129.19
+Child process stopped: 4:34.236.129.19
+server: waiting for connections on port 8086
+server: started connection with 34.234.186.137
+server: started connection with 44.210.17.192
+server: started connection with 34.236.129.19
+server: started connection with 34.236.129.19
+Child process started: 4:34.236.129.19
+2024-10-13 00:20:51
+Packet type: echo
+Contents: 5B
+Ping!
+Connection closed: 34.236.129.19
+Child process stopped: 4:34.236.129.19
+server: waiting for connections on port 8086
+server: started connection with 34.234.186.137
+server: started connection with 44.210.17.192
+server: started connection with 34.236.129.19
+server: started connection with 34.236.129.19
+server: started connection with 23.22.227.77
+Child process started: 4:23.22.227.77
+2024-10-13 01:20:51
+Packet type: echo
+Contents: 5B
+Ping!
+Connection closed: 23.22.227.77
+Child process stopped: 4:23.22.227.77
+server: waiting for connections on port 8086
+server: started connection with 34.234.186.137
+server: started connection with 44.210.17.192
+server: started connection with 34.236.129.19
+server: started connection with 34.236.129.19
+server: started connection with 23.22.227.77
+server: started connection with 152.32.135.214
+Child process started: 4:152.32.135.214
+2024-10-13 02:09:56
+Packet type: Connection closed: 152.32.135.214
+Child process stopped: 4:152.32.135.214
+server: waiting for connections on port 8086
+server: started connection with 34.234.186.137
+server: started connection with 44.210.17.192
+server: started connection with 34.236.129.19
+server: started connection with 34.236.129.19
+server: started connection with 23.22.227.77
+server: started connection with 152.32.135.214
+server: started connection with 152.32.135.214
+Child process started: 4:152.32.135.214
+Connection closed: 152.32.135.214
+Child process stopped: 4:152.32.135.214
+server: waiting for connections on port 8086
+server: started connection with 34.234.186.137
+server: started connection with 44.210.17.192
+server: started connection with 34.236.129.19
+server: started connection with 34.236.129.19
+server: started connection with 23.22.227.77
+server: started connection with 152.32.135.214
+server: started connection with 152.32.135.214
+server: started connection with 152.32.135.214
+Child process started: 4:152.32.135.214
+Connection closed: 152.32.135.214
+Child process stopped: 4:152.32.135.214
+server: waiting for connections on port 8086
+server: started connection with 34.234.186.137
+server: started connection with 44.210.17.192
+server: started connection with 34.236.129.19
+server: started connection with 34.236.129.19
+server: started connection with 23.22.227.77
+server: started connection with 152.32.135.214
+server: started connection with 152.32.135.214
+server: started connection with 152.32.135.214
+server: started connection with 152.32.135.214
+Child process started: 4:152.32.135.214
+Connection closed: 152.32.135.214
+Child process stopped: 4:152.32.135.214
+server: waiting for connections on port 8086
+server: started connection with 34.234.186.137
+server: started connection with 44.210.17.192
+server: started connection with 34.236.129.19
+server: started connection with 34.236.129.19
+server: started connection with 23.22.227.77
+server: started connection with 152.32.135.214
+server: started connection with 152.32.135.214
+server: started connection with 152.32.135.214
+server: started connection with 152.32.135.214
+server: started connection with 152.32.135.214
+Child process started: 4:152.32.135.214
+Connection closed: 152.32.135.214
+Child process stopped: 4:152.32.135.214
+server: waiting for connections on port 8086
+server: started connection with 34.234.186.137
+server: started connection with 44.210.17.192
+server: started connection with 34.236.129.19
+server: started connection with 34.236.129.19
+server: started connection with 23.22.227.77
+server: started connection with 152.32.135.214
+server: started connection with 152.32.135.214
+server: started connection with 152.32.135.214
+server: started connection with 152.32.135.214
+server: started connection with 152.32.135.214
+server: started connection with 152.32.135.214
+Child process started: 4:152.32.135.214
+Connection closed: 152.32.135.214
+Child process stopped: 4:152.32.135.214
+server: waiting for connections on port 8086
+server: started connection with 34.234.186.137
+server: started connection with 44.210.17.192
+server: started connection with 34.236.129.19
+server: started connection with 34.236.129.19
+server: started connection with 23.22.227.77
+server: started connection with 152.32.135.214
+server: started connection with 152.32.135.214
+server: started connection with 152.32.135.214
+server: started connection with 152.32.135.214
+server: started connection with 152.32.135.214
+server: started connection with 152.32.135.214
+server: started connection with 152.32.135.214
+Child process started: 4:152.32.135.214
+Connection closed: 152.32.135.214
+Child process stopped: 4:152.32.135.214
+server: waiting for connections on port 8086
+server: started connection with 34.234.186.137
+server: started connection with 44.210.17.192
+server: started connection with 34.236.129.19
+server: started connection with 34.236.129.19
+server: started connection with 23.22.227.77
+server: started connection with 152.32.135.214
+server: started connection with 152.32.135.214
+server: started connection with 152.32.135.214
+server: started connection with 152.32.135.214
+server: started connection with 152.32.135.214
+server: started connection with 152.32.135.214
+server: started connection with 152.32.135.214
+server: started connection with 152.32.135.214
+Child process started: 4:152.32.135.214
+Connection closed: 152.32.135.214
+Child process stopped: 4:152.32.135.214
+server: waiting for connections on port 8086
+server: started connection with 34.234.186.137
+server: started connection with 44.210.17.192
+server: started connection with 34.236.129.19
+server: started connection with 34.236.129.19
+server: started connection with 23.22.227.77
+server: started connection with 152.32.135.214
+server: started connection with 152.32.135.214
+server: started connection with 152.32.135.214
+server: started connection with 152.32.135.214
+server: started connection with 152.32.135.214
+server: started connection with 152.32.135.214
+server: started connection with 152.32.135.214
+server: started connection with 152.32.135.214
+server: started connection with 152.32.135.214
+Child process started: 4:152.32.135.214
+Connection closed: 152.32.135.214
+Child process stopped: 4:152.32.135.214
+server: waiting for connections on port 8086
+server: started connection with 34.234.186.137
+server: started connection with 44.210.17.192
+server: started connection with 34.236.129.19
+server: started connection with 34.236.129.19
+server: started connection with 23.22.227.77
+server: started connection with 152.32.135.214
+server: started connection with 152.32.135.214
+server: started connection with 152.32.135.214
+server: started connection with 152.32.135.214
+server: started connection with 152.32.135.214
+server: started connection with 152.32.135.214
+server: started connection with 152.32.135.214
+server: started connection with 152.32.135.214
+server: started connection with 152.32.135.214
+server: started connection with 152.32.135.214
+Child process started: 4:152.32.135.214
+Connection closed: 152.32.135.214
+Child process stopped: 4:152.32.135.214
+server: waiting for connections on port 8086
+server: started connection with 34.234.186.137
+server: started connection with 44.210.17.192
+server: started connection with 34.236.129.19
+server: started connection with 34.236.129.19
+server: started connection with 23.22.227.77
+server: started connection with 152.32.135.214
+server: started connection with 152.32.135.214
+server: started connection with 152.32.135.214
+server: started connection with 152.32.135.214
+server: started connection with 152.32.135.214
+server: started connection with 152.32.135.214
+server: started connection with 152.32.135.214
+server: started connection with 152.32.135.214
+server: started connection with 152.32.135.214
+server: started connection with 152.32.135.214
+server: started connection with 44.210.17.192
+Child process started: 4:44.210.17.192
+2024-10-13 02:20:51
+Packet type: echo
+Contents: 5B
+Ping!
+Connection closed: 44.210.17.192
+Child process stopped: 4:44.210.17.192
+server: waiting for connections on port 8086
+server: started connection with 34.234.186.137
+server: started connection with 44.210.17.192
+server: started connection with 34.236.129.19
+server: started connection with 34.236.129.19
+server: started connection with 23.22.227.77
+server: started connection with 152.32.135.214
+server: started connection with 152.32.135.214
+server: started connection with 152.32.135.214
+server: started connection with 152.32.135.214
+server: started connection with 152.32.135.214
+server: started connection with 152.32.135.214
+server: started connection with 152.32.135.214
+server: started connection with 152.32.135.214
+server: started connection with 152.32.135.214
+server: started connection with 152.32.135.214
+server: started connection with 44.210.17.192
+server: started connection with 64.62.156.67
+Child process started: 4:64.62.156.67
+Connection closed: 64.62.156.67
+Child process stopped: 4:64.62.156.67
+server: waiting for connections on port 8086
+server: started connection with 34.234.186.137
+server: started connection with 44.210.17.192
+server: started connection with 34.236.129.19
+server: started connection with 34.236.129.19
+server: started connection with 23.22.227.77
+server: started connection with 152.32.135.214
+server: started connection with 152.32.135.214
+server: started connection with 152.32.135.214
+server: started connection with 152.32.135.214
+server: started connection with 152.32.135.214
+server: started connection with 152.32.135.214
+server: started connection with 152.32.135.214
+server: started connection with 152.32.135.214
+server: started connection with 152.32.135.214
+server: started connection with 152.32.135.214
+server: started connection with 44.210.17.192
+server: started connection with 64.62.156.67
+server: started connection with 34.236.129.19
+Child process started: 4:34.236.129.19
+2024-10-13 03:20:51
+Packet type: echo
+Contents: 5B
+Ping!
+Connection closed: 34.236.129.19
+Child process stopped: 4:34.236.129.19
+server: waiting for connections on port 8086
+server: started connection with 34.234.186.137
+server: started connection with 44.210.17.192
+server: started connection with 34.236.129.19
+server: started connection with 34.236.129.19
+server: started connection with 23.22.227.77
+server: started connection with 152.32.135.214
+server: started connection with 152.32.135.214
+server: started connection with 152.32.135.214
+server: started connection with 152.32.135.214
+server: started connection with 152.32.135.214
+server: started connection with 152.32.135.214
+server: started connection with 152.32.135.214
+server: started connection with 152.32.135.214
+server: started connection with 152.32.135.214
+server: started connection with 152.32.135.214
+server: started connection with 44.210.17.192
+server: started connection with 64.62.156.67
+server: started connection with 34.236.129.19
+server: started connection with 35.171.69.69
+Child process started: 4:35.171.69.69
+2024-10-13 04:20:51
+Packet type: echo
+Contents: 5B
+Ping!
+Connection closed: 35.171.69.69
+Child process stopped: 4:35.171.69.69
+server: waiting for connections on port 8086
+server: started connection with 34.234.186.137
+server: started connection with 44.210.17.192
+server: started connection with 34.236.129.19
+server: started connection with 34.236.129.19
+server: started connection with 23.22.227.77
+server: started connection with 152.32.135.214
+server: started connection with 152.32.135.214
+server: started connection with 152.32.135.214
+server: started connection with 152.32.135.214
+server: started connection with 152.32.135.214
+server: started connection with 152.32.135.214
+server: started connection with 152.32.135.214
+server: started connection with 152.32.135.214
+server: started connection with 152.32.135.214
+server: started connection with 152.32.135.214
+server: started connection with 44.210.17.192
+server: started connection with 64.62.156.67
+server: started connection with 34.236.129.19
+server: started connection with 35.171.69.69
+server: started connection with 3.227.104.16
+Child process started: 4:3.227.104.16
+2024-10-13 05:20:51
+Packet type: echo
+Contents: 5B
+Ping!
+Connection closed: 3.227.104.16
+Child process stopped: 4:3.227.104.16
+server: waiting for connections on port 8086
+server: started connection with 34.234.186.137
+server: started connection with 44.210.17.192
+server: started connection with 34.236.129.19
+server: started connection with 34.236.129.19
+server: started connection with 23.22.227.77
+server: started connection with 152.32.135.214
+server: started connection with 152.32.135.214
+server: started connection with 152.32.135.214
+server: started connection with 152.32.135.214
+server: started connection with 152.32.135.214
+server: started connection with 152.32.135.214
+server: started connection with 152.32.135.214
+server: started connection with 152.32.135.214
+server: started connection with 152.32.135.214
+server: started connection with 152.32.135.214
+server: started connection with 44.210.17.192
+server: started connection with 64.62.156.67
+server: started connection with 34.236.129.19
+server: started connection with 35.171.69.69
+server: started connection with 3.227.104.16
+server: started connection with 13.91.41.230
+Child process started: 4:13.91.41.230
+Connection closed: 13.91.41.230
+Child process stopped: 4:13.91.41.230
+server: waiting for connections on port 8086
+server: started connection with 34.234.186.137
+server: started connection with 44.210.17.192
+server: started connection with 34.236.129.19
+server: started connection with 34.236.129.19
+server: started connection with 23.22.227.77
+server: started connection with 152.32.135.214
+server: started connection with 152.32.135.214
+server: started connection with 152.32.135.214
+server: started connection with 152.32.135.214
+server: started connection with 152.32.135.214
+server: started connection with 152.32.135.214
+server: started connection with 152.32.135.214
+server: started connection with 152.32.135.214
+server: started connection with 152.32.135.214
+server: started connection with 152.32.135.214
+server: started connection with 44.210.17.192
+server: started connection with 64.62.156.67
+server: started connection with 34.236.129.19
+server: started connection with 35.171.69.69
+server: started connection with 3.227.104.16
+server: started connection with 13.91.41.230
+server: started connection with 44.210.17.192
+Child process started: 4:44.210.17.192
+2024-10-13 06:20:51
+Packet type: echo
+Contents: 5B
+Ping!
+Connection closed: 44.210.17.192
+Child process stopped: 4:44.210.17.192
+server: waiting for connections on port 8086
+server: started connection with 34.234.186.137
+server: started connection with 44.210.17.192
+server: started connection with 34.236.129.19
+server: started connection with 34.236.129.19
+server: started connection with 23.22.227.77
+server: started connection with 152.32.135.214
+server: started connection with 152.32.135.214
+server: started connection with 152.32.135.214
+server: started connection with 152.32.135.214
+server: started connection with 152.32.135.214
+server: started connection with 152.32.135.214
+server: started connection with 152.32.135.214
+server: started connection with 152.32.135.214
+server: started connection with 152.32.135.214
+server: started connection with 152.32.135.214
+server: started connection with 44.210.17.192
+server: started connection with 64.62.156.67
+server: started connection with 34.236.129.19
+server: started connection with 35.171.69.69
+server: started connection with 3.227.104.16
+server: started connection with 13.91.41.230
+server: started connection with 44.210.17.192
+server: started connection with 23.22.227.77
+Child process started: 4:23.22.227.77
+2024-10-13 07:20:51
+Packet type: echo
+Contents: 5B
+Ping!
+Connection closed: 23.22.227.77
+Child process stopped: 4:23.22.227.77
+server: waiting for connections on port 8086
+server: started connection with 23.95.200.178
+Child process started: 4:23.95.200.178
+Connection closed: 23.95.200.178
+Child process stopped: 4:23.95.200.178
+
+server: waiting for connections on port 8086
+server: started connection with 44.210.17.192
+Child process started: 4:44.210.17.192
+2024-10-13 08:20:51
+Packet type: echo
+Contents: 5B
+Ping!
+Connection closed: 44.210.17.192
+Child process stopped: 4:44.210.17.192
+
+server: waiting for connections on port 8086
+server: started connection with 3.227.104.16
+Child process started: 4:3.227.104.16
+2024-10-13 09:20:51
+Packet type: echo
+Contents: 5B
+Ping!
+Connection closed: 3.227.104.16
+Child process stopped: 4:3.227.104.16
+
+server: waiting for connections on port 8086
+Starting server...
+server: waiting for connections on port 8086
+server: started connection with ðV®€
+Starting server...
+server: waiting for connections on port 8086
+server: started connection with 23.22.227.77
