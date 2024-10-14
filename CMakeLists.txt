@@ -14,6 +14,7 @@ project(${target} C)
 add_executable(${target} 
 	src/server.c
 	src/child.c
+	src/ts_printf.c
 )
 
 target_link_libraries(${target} PRIVATE

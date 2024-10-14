@@ -1,0 +1,65 @@
+Wisdom Server Protocols
+
+Security
+
+Currently no security protocols exits. Communication with the server  
+is done through an unencrypted TCP socket. THIS IS SET TO CHANGE.
+
+I plan to improve transmission and server security in two stages.  
+First, in the short term, I'm going to establish a 20 byte security  
+preamble to do some simple filtering of incoming garbage data. This  
+20 byte value will be known to both server and gateway at complile  
+time through a wisdom_pw.h file.  
+
+Second, I plan to establish an SSL certificate that we can use to
+properly encrypt our TCP transmissions. These two measures should
+be enough to ensure minimal interference with the server and reduce  
+incoming garbage data.   
+
+Pre-Packet
+----------
+
+| Security Preamble | Packet 0 | Packet 1 | ... | Packet n |
+      20 bytes
+
+Packet Protocols
+----------------
+
+|       Header = 4 bytes      | 
+| Payload Type | Payload Size | Payload |
+     2 bytes       2 bytes      n bytes
+
+n = Packet Size
+
+First the sencurity preamble is stripped and checked.  
+Second the header is stripped and payload type is identified.  
+Finally, n (Payload Size) bytes are read from the buffer and  
+processed according to type.  
+
+Echo Packet
+-----------
+
+Echo packet simply contains a string to be printed by the server.  
+For diagnostic purposes.  
+  
+| Messsage |
+  n bytes   
+
+n = Payload Size
+
+Sensor Packet
+-------------
+
+| Sensor Type | Sensor Data | Timestamp |
+    2 bytes       n bytes      5 bytes
+                             [M,H,D,Mo,Y]
+
+n = Payload Size - 7 bytes
+
+sensor data: SHT30
+
+| Temperature | Humidity | 
+    4 bytes     4 bytes
+    (*float)    (*float)
+
+*IEEE-754 floating point standard

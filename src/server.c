@@ -9,8 +9,10 @@
 #include <sys/wait.h>
 #include <signal.h>
 #include <arpa/inet.h>
+#include <time.h>
 
 #include "child.h"
+#include "ts_printf.h"
 
 #define ever ;;
 
@@ -74,8 +76,12 @@ int main(int argc, char *argv[]) {
 	if (sigaction(SIGCHLD, &sa, NULL) == -1)
 		errorf_exit(1, "server: sigaction: %s\n", strerror(errno));
 
+	// Timestamp
+	time_t t = time(NULL); 
+	struct tm tm = *localtime(&t);
 
-	printf("server: waiting for connections on port %s\n", port);
+	ts_printf("Server started\n");
+	ts_printf("Server waiting for connections on port %s\n\n", port);
 	fflush(stdout);
 
 	int client_fd;
@@ -98,7 +104,7 @@ int main(int argc, char *argv[]) {
 				(sizeof addr)
 		);
 
-		printf("server: started connection with %s\n", addr);
+		ts_printf("Server started connection: %s\n", addr);
 		fflush(stdout);
 
 		// Every connection gets forked into its own process
