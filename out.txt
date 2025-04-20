@@ -453,3 +453,119 @@ server: started connection with ðV®€
 Starting server...
 server: waiting for connections on port 8086
 server: started connection with 23.22.227.77
+server: waiting for connections on port 8086
+server: started connection with 34.236.129.19
+Child process started: 34.236.129.19
+2024-10-13 12:20:51
+Packet type: echo
+Contents: 5B
+Ping!
+Connection closed: 34.236.129.19
+Child process stopped: 34.236.129.19
+
+server: waiting for connections on port 8086
+Server started: 2024-10-13 13:13:23
+Server waiting for connections on port 8086
+Server started: 2024-10-13 13:13:53
+Server waiting for connections on port 8086
+
+server: started connection with 23.22.227.77
+Child process started: 23.22.227.77
+Packet received: 2024-10-13 13:20:51
+Type: echo
+Size: 5B
+Contents: Ping!
+Connection closed: 23.22.227.77
+Child process stopped: 23.22.227.77
+
+<2024-10-13 13:39:18> Server started
+<2024-10-13 13:39:18> Server waiting for connections on port 8086
+
+<2024-10-13 14:20:44> Server started connection: 34.234.186.137
+<2024-10-13 14:20:44> Child process started: 34.234.186.137
+<2024-10-13 14:20:52> Packet received
+<2024-10-13 14:20:52> Type: <2024-10-13 14:20:52> echo
+<2024-10-13 14:20:52> Size: 5B
+<2024-10-13 14:20:52> Contents: Ping!
+<2024-10-13 14:21:01> Connection closed: 34.234.186.137
+<2024-10-13 14:21:01> Child process stopped: 34.234.186.137
+
+<2024-10-13 14:24:16> Server started
+<2024-10-13 14:24:16> Server waiting for connections on port 8086
+
+<2024-10-13 15:20:43> Server started connection: 3.227.104.16
+<2024-10-13 15:20:43> Child process started: 3.227.104.16
+<2024-10-13 15:20:51> Packet received
+<2024-10-13 15:20:51> Type: echo
+<2024-10-13 15:20:51> Size: 5B
+<2024-10-13 15:20:51> Contents: Ping!
+<2024-10-13 15:20:59> Connection closed: 3.227.104.16
+<2024-10-13 15:20:59> Child process stopped: 3.227.104.16
+
+<2024-10-13 16:20:45> Server started connection: 34.236.129.19
+<2024-10-13 16:20:45> Child process started: 34.236.129.19
+<2024-10-13 16:20:53> Packet received
+<2024-10-13 16:20:53> Type: echo
+<2024-10-13 16:20:53> Size: 5B
+<2024-10-13 16:20:53> Contents: Ping!
+<2024-10-13 16:21:02> Connection closed: 34.236.129.19
+<2024-10-13 16:21:02> Child process stopped: 34.236.129.19
+
+<2024-10-13 17:20:43> Server started connection: 3.227.104.16
+<2024-10-13 17:20:43> Child process started: 3.227.104.16
+<2024-10-13 17:20:51> Packet received
+<2024-10-13 17:20:51> Type: echo
+<2024-10-13 17:20:51> Size: 5B
+<2024-10-13 17:20:51> Contents: Ping!
+<2024-10-13 17:21:00> Connection closed: 3.227.104.16
+<2024-10-13 17:21:00> Child process stopped: 3.227.104.16
+
+<2024-10-13 17:58:18> Server started
+<2024-10-13 17:58:18> Server waiting for connections on port 8086
+
+# Changed Contents -> Payload
+<2024-10-13 18:20:43> Server started connection: 44.210.17.192
+<2024-10-13 18:20:43> Child process started: 44.210.17.192
+<2024-10-13 18:20:51> Packet received
+<2024-10-13 18:20:51> Type: echo
+<2024-10-13 18:20:51> Size: 5
+<2024-10-13 18:20:51> Payload: Ping!
+<2024-10-13 18:21:00> Connection closed: 44.210.17.192
+<2024-10-13 18:21:00> Child process stopped: 44.210.17.192
+
+<2024-10-13 19:20:44> Server started connection: 35.171.69.69
+<2024-10-13 19:20:44> Child process started: 35.171.69.69
+<2024-10-13 19:20:52> Packet received
+<2024-10-13 19:20:52> Type: echo
+<2024-10-13 19:20:52> Size: 5
+<2024-10-13 19:20:52> Payload: Ping!
+<2024-10-13 19:21:00> Connection closed: 35.171.69.69
+<2024-10-13 19:21:00> Child process stopped: 35.171.69.69
+
+<2024-10-13 20:20:44> Server started connection: 35.171.69.69
+<2024-10-13 20:20:44> Child process started: 35.171.69.69
+<2024-10-13 20:20:52> Packet received
+<2024-10-13 20:20:52> Type: echo
+<2024-10-13 20:20:52> Size: 5
+<2024-10-13 20:20:52> Payload: Ping!
+<2024-10-13 20:21:00> Connection closed: 35.171.69.69
+<2024-10-13 20:21:00> Child process stopped: 35.171.69.69
+
+<2024-10-13 21:20:44> Server started connection: 44.210.17.192
+<2024-10-13 21:20:44> Child process started: 44.210.17.192
+<2024-10-13 21:20:52> Packet received
+<2024-10-13 21:20:52> Type: echo
+<2024-10-13 21:20:52> Size: 5
+<2024-10-13 21:20:52> Payload: Ping!
+<2024-10-13 21:20:59> Connection closed: 44.210.17.192
+<2024-10-13 21:20:59> Child process stopped: 44.210.17.192
+
+<2024-10-13 22:20:44> Server started connection: 34.236.129.19
+<2024-10-13 22:20:44> Child process started: 34.236.129.19
+<2024-10-13 22:20:52> Packet received
+<2024-10-13 22:20:52> Type: echo
+<2024-10-13 22:20:52> Size: 5
+<2024-10-13 22:20:52> Payload: Ping!
+<2024-10-13 22:21:01> Connection closed: 34.236.129.19
+<2024-10-13 22:21:01> Child process stopped: 34.236.129.19
+
