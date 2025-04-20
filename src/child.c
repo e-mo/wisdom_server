@@ -63,7 +63,10 @@ int child_main(int client_fd, char *addr) {
 	// Set socket to non-blocking
 	fcntl(client_fd, F_SETFL, O_NONBLOCK);
 
-	cbuffer_t *recv_buf = cbuffer_create(RECV_BUFFER_SIZE);
+	cbuffer_t recv_buf;
+	uint8_t recv_buf_internal[TEMP_BUFFER_SIZE * 2];
+	cbuffer_init(&recv_buf, recv_buf_internal, TEMP_BUFFER_SIZE * 2);
+
 	uint8_t temp_buf[TEMP_BUFFER_SIZE] = {0};
 
 	bool new_packet = true;
@@ -86,57 +89,15 @@ int child_main(int client_fd, char *addr) {
 				continue;
 			}
 
-			cbuffer_push(recv_buf, temp_buf, num);
+			cbuffer_push(&recv_buf, temp_buf, num);
 		}
+
+		printf("Received some stuff\n");
 
 		// Continues until a full header has been received, and then pops it off
 		// the buffer.
 		// If the connection has closed and not enough data has been received
 		// to construct at least a header, discard the buffer and stop child process.
-		if (new_packet) {
-			if (cbuffer_length(recv_buf) < WISDOM_HEADER_SIZE) {
-				if (connection_closed) break;
-				continue;
-			}
-
-			new_packet = false;
-			cbuffer_pop(recv_buf, &header, WISDOM_HEADER_SIZE);
-		}
-
-		// Temporary variable to hold date time stamp packed data size
-		uint date_time_size = 5;
-
-		// Now that we have a header we know how many bytes we are expecting.
-		// Until we have recieved that many bytes, continue.
-		// If we find the connection closed and we can't construct a complete payload,
-		// discard the buffer and stop child process.
-		if (cbuffer_length(recv_buf) < payload_size(&header)) { // + date_time_size) {
-			if (connection_closed) break;
-			continue;
-		}
-
-		// We have enough for a full payload.
-		// Pyp is off the stack + timestamp that follows every packet.
-		cbuffer_pop(recv_buf, payload, payload_size(&header)); // + date_time_size);
-
-		// Timestamp
-		time_t t = time(NULL); 
-		struct tm tm = *localtime(&t);
-
-		ts_printf("Packet received\n");
-		ts_printf("Type: ");
-		switch(payload_type(&header)) {
-		case WISDOM_PACKET_ECHO: 
-			printf("echo\n");
-			ts_printf("Size: %u\n", payload_size(&header));
-			ts_printf("Payload: %.*s\n", payload_size(&header), payload);
-			break;
-		case WISDOM_PACKET_SENSOR:
-			printf("sensor\n");
-			process_sensor(payload);
-		}
-
-		new_packet = true;
 	}
 
 	ts_printf("Child process stopped: %s\n\n", addr);
