@@ -17,5 +17,5 @@ add_executable(${target}
 )
 
 target_link_libraries(${target} PRIVATE
-	circle_buffer
+	circle_buffer_lib
 )
