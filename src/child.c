@@ -15,9 +15,6 @@
 #include "cbuffer.h"
 #include "ts_printf.h"
 
-#include "wisdom_inet.h"
-#include "sensor_type.h"
-
 enum _child_return {
 	CHILD_OK,	
 	CHILD_BUFFER_OVERFLOW
